@@ -1,0 +1,44 @@
+@import 'variables';
+.add-rec{
+    @include flexbox(column,space-evenly);
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    width: 600px;
+    background-color: $main-card;
+
+
+    .rec-name{
+        width: 500px;
+    }
+    .rec-des{
+        width: 500px;
+    }
+    input{
+        padding-left: 10px;
+        border-radius: 10px;
+        width: 220px;
+        height: 35px;
+        margin: 10px;
+        &:focus{
+            background-color: rgb(228, 228, 228)
+        }
+    }
+    .rec-mid{
+        @include flexbox(row,space-between);
+        gap: 20px;
+    }
+    button{
+        border-radius: 20px;
+        height: 38px;
+        width: 120px;
+        font-size: 16px;
+        font-weight: 500;
+
+    
+        &:hover{
+            background-color: rgb(177, 175, 175);
+            color: white;
+        }
+    }
+}

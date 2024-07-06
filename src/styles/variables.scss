@@ -1,0 +1,11 @@
+
+$primary-color: #f6f0dc;
+$main-font: #6d3a06;
+$main-card: rgb(161, 207, 176);
+
+@mixin flexbox($fd, $jc , $ai:center){
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}

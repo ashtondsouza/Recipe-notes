@@ -1,0 +1,64 @@
+@import './variables.scss';
+
+.newcard-container{
+    width: 100%;
+    // border: 2px solid red;
+    @include flexbox(row,space-evenly);
+    flex-wrap: wrap;
+    padding: 20px;
+
+    .rec-newcard{
+        @include flexbox(column,space-evenly,start);
+        // flex-direction: row;
+        width: 300px;
+        padding: 20px;
+        
+    input{
+        margin: 10px;
+        width: 260px;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        &:focus{
+            background-color: rgb(255, 244, 244);
+            
+        }
+    }
+    .btns{
+        @include flexbox(row,space-between);
+        gap: 140px;
+    }
+    .btn-save{
+        border-radius: 10px;
+        height: 30px;
+        width: 80px;
+        margin-top: 10px;
+    }
+
+    .btn-del{
+        border-radius: 10px;
+        height: 30px;
+        width: 80px;
+        margin-top: 10px;
+    }
+    .btn{
+        &:hover{
+            background-color: rgb(117, 90, 39);
+            color:white;
+        }
+    }
+
+
+      
+        margin: 10px;
+        &:nth-child(odd) {
+            background-color: #c4ed69; // Blue for odd cards
+            border:4px solid #ef9b7c;
+          }
+        
+          &:nth-child(even) {
+            background-color: #ef9b7c;
+            border:4px solid #c4ed69;
+          }
+    }
+}
